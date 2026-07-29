@@ -1,0 +1,162 @@
+:root {
+  color: #1d2935;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+  line-height: 1.25;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #e9edf1;
+}
+
+.cv {
+  display: grid;
+  grid-template-columns: 64mm 1fr;
+  width: 210mm;
+  height: 297mm;
+  margin: 16px auto;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 2px 18px rgb(23 32 51 / 12%);
+}
+
+.perfil {
+  padding: 12mm 8mm;
+  color: #ffffff;
+  background: #12344d;
+}
+
+.iniciales {
+  display: grid;
+  width: 18mm;
+  height: 18mm;
+  margin-bottom: 5mm;
+  place-items: center;
+  color: #12344d;
+  background: #6ed6d0;
+  border-radius: 3mm;
+  font-size: 17pt;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: 17pt;
+  line-height: 1.05;
+}
+
+.puesto {
+  margin: 3mm 0 0;
+  color: #6ed6d0;
+  font-size: 10.5pt;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.subtitulo {
+  margin: 1mm 0 0;
+  color: #d7e6ee;
+  font-size: 9pt;
+}
+
+.perfil section {
+  margin-top: 6mm;
+}
+
+.perfil h2 {
+  margin: 0 0 2mm;
+  padding-bottom: 1mm;
+  color: #6ed6d0;
+  border-bottom: 0.5px solid rgb(110 214 208 / 50%);
+  font-size: 9.5pt;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.perfil h3 {
+  margin: 2mm 0 0.6mm;
+  color: #ffffff;
+  font-size: 8.3pt;
+}
+
+.perfil p {
+  margin: 1mm 0;
+  color: #e4edf2;
+  font-size: 7.8pt;
+  overflow-wrap: anywhere;
+}
+
+.perfil a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contenido {
+  padding: 11mm 12mm 9mm;
+}
+
+.contenido section {
+  margin-top: 4mm;
+}
+
+.contenido .primera-seccion {
+  margin-top: 0;
+}
+
+.contenido h2 {
+  margin: 0 0 1.5mm;
+  padding-bottom: 1mm;
+  color: #12344d;
+  border-bottom: 0.7px solid #9bb0bd;
+  font-size: 10.2pt;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.contenido h3 {
+  margin: 2mm 0 0.5mm;
+  color: #1d2935;
+  font-size: 9pt;
+}
+
+.contenido p {
+  margin: 1mm 0;
+  font-size: 8.2pt;
+}
+
+.datos {
+  color: #536575;
+  font-size: 7.5pt !important;
+}
+
+ul {
+  margin: 1mm 0 1.5mm;
+  padding-left: 4.5mm;
+}
+
+li {
+  margin: 0.6mm 0;
+  font-size: 8pt;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+
+  .cv {
+    margin: 0;
+    box-shadow: none;
+  }
+}

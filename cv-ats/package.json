@@ -1,0 +1,14 @@
+{
+  "name": "cv-ats-jesus-granados",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node generar-pdf.js",
+    "verify": "node verificar-pdf.js"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^5.4.149",
+    "pdfkit": "^0.17.2"
+  }
+}
