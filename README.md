@@ -3,6 +3,10 @@
 Landing page profesional de Jesús Francisco Granados Mora, desarrollador
 Backend Python Junior y técnico en redes.
 
+## Ver CV
+
+[Visualizar el CV publicado en GitHub Pages](https://ciscojes.github.io/)
+
 ## Tecnologías
 
 - HTML semántico
