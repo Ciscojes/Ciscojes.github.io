@@ -815,6 +815,11 @@ h3 {
       transform: scale(1.025);
     }
   }
+
+  .visual-proyecto-panoramico img {
+    object-fit: contain;
+    object-position: center;
+  }
 }
 
 .estado-proyecto {
@@ -837,6 +842,12 @@ h3 {
   span {
     color: $cyan;
   }
+}
+
+.enlaces-proyecto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
 }
 
 .linea-tiempo {
@@ -1218,16 +1229,16 @@ footer {
   }
 
   .titulo-seccion,
-  .sobre-contenido {
+  .sobre .sobre-contenido {
     grid-template-columns: 1fr;
   }
 
-  .lista-habilidades {
+  .zona-habilidades .lista-habilidades {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .habilidad,
-  .habilidad-destacada,
+  .habilidad.habilidad-destacada,
   .habilidad:nth-child(2) {
     grid-column: auto;
   }
@@ -1291,8 +1302,8 @@ footer {
   }
 
   .cualidades,
-  .lista-habilidades,
-  .estudios-actuales {
+  .zona-habilidades .lista-habilidades,
+  .formacion .estudios-actuales {
     grid-template-columns: 1fr;
   }
 
