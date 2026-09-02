@@ -13,7 +13,7 @@ const doc = new PDFDocument({
     Title: "CV - Jesús Francisco Granados Mora",
     Author: "Jesús Francisco Granados Mora",
     Subject: "Desarrollador Backend Python Junior y Técnico en Redes",
-    Keywords: "Python, FastAPI, Backend, PostgreSQL, Docker, APIs REST, Redes, CCNA, CCNP",
+    Keywords: "Python, FastAPI, Backend, Full Stack, PostgreSQL, Docker, APIs REST, Inteligencia Artificial, Redes, CCNA, CCNP",
   },
 });
 
@@ -83,29 +83,29 @@ function tituloContenido(titulo, y) {
 function textoContenido(contenido, y, opciones = {}) {
   posicion(contenidoX, y);
   doc.font(opciones.negrita ? "Helvetica-Bold" : "Helvetica")
-    .fontSize(opciones.tamaño ?? 8.7)
+    .fontSize(opciones.tamaño ?? 8.1)
     .fillColor(opciones.color ?? texto)
     .text(contenido, {
       width: contenidoAncho,
-      lineGap: opciones.espacio ?? 0.9,
+      lineGap: opciones.espacio ?? 0.55,
     });
   return doc.y;
 }
 
 function encabezadoTrabajo(titulo, datos, y) {
-  y = textoContenido(titulo, y, { negrita: true, tamaño: 9.1 });
-  y = textoContenido(datos, y + 1.5, { tamaño: 7.8, color: tenue, espacio: 0.4 });
-  return y + 1.5;
+  y = textoContenido(titulo, y, { negrita: true, tamaño: 8.45 });
+  y = textoContenido(datos, y + 1, { tamaño: 7.25, color: tenue, espacio: 0.25 });
+  return y + 1;
 }
 
 function viñeta(contenido, y) {
   posicion(contenidoX + 2, y);
-  doc.font("Helvetica").fontSize(8.35).fillColor(texto).text(`• ${contenido}`, {
+  doc.font("Helvetica").fontSize(7.6).fillColor(texto).text(`• ${contenido}`, {
     width: contenidoAncho - 2,
     indent: 7,
-    lineGap: 0.75,
+    lineGap: 0.4,
   });
-  return doc.y + 1;
+  return doc.y + 0.7;
 }
 
 // Columna izquierda
@@ -156,21 +156,21 @@ yIzquierda = textoLateral("LinkedIn: Jesús Granados", yIzquierda + 3, {
 
 yIzquierda = tituloLateral("Habilidades", yIzquierda + 18);
 const habilidades = [
-  ["Backend", "Python · FastAPI · APIs REST · Pydantic · Node.js · Express · JWT"],
-  ["Datos", "PostgreSQL · SQLite · SQLAlchemy · Alembic"],
-  ["Calidad y DevOps", "Pytest · Git · GitHub Actions · Linux · Docker · Docker Compose"],
-  ["Web e IA", "HTML · CSS · Sass · JavaScript · Streamlit · Gemini · RAG · OCR"],
-  ["Redes", "CCNA · CCNP · Switching · Routing · Ciberseguridad"],
+  ["Backend y Full Stack", "Python · FastAPI · APIs REST · Pydantic · JavaScript · Node.js · Express · HTML · Sass/CSS · Vite"],
+  ["Datos", "PostgreSQL · SQLite · SQLAlchemy · Alembic · Migraciones"],
+  ["Inteligencia artificial", "Gemini · APIs de IA · Prompt engineering · RAG · OCR · Bases de conocimiento · MCP · Chatbots · Agentes IA"],
+  ["Calidad y entrega", "Pytest · Git · GitHub · Linux · Docker · GitHub Actions · CI/CD · Spec-Driven Development"],
+  ["Redes y seguridad", "CCNA · CCNP · Switching · Routing · Ciberseguridad"],
 ];
 
 for (const [grupo, herramientas] of habilidades) {
   yIzquierda = textoLateral(grupo, yIzquierda + 5, {
     negrita: true,
-    tamaño: 7.6,
+    tamaño: 7.25,
     color: blanco,
   });
   yIzquierda = textoLateral(herramientas, yIzquierda + 1.5, {
-    tamaño: 7.15,
+    tamaño: 6.65,
     color: lateralTexto,
     espacio: 0.45,
   });
@@ -192,34 +192,54 @@ yIzquierda = textoLateral("Licencia de motocicleta.", yIzquierda + 3);
 let yDerecha = 31;
 yDerecha = tituloContenido("Perfil profesional", yDerecha);
 yDerecha = textoContenido(
-  "Desarrollador backend Python junior y técnico en redes con proyectos funcionales en FastAPI, PostgreSQL, Docker, pruebas automatizadas e inteligencia artificial. Aporto siete años de experiencia laboral, precisión, responsabilidad y resolución práctica de problemas.",
+  "Desarrollador backend Python junior y técnico en redes, con formación Full Stack e inteligencia artificial. He construido cinco proyectos funcionales y responsive con APIs, bases de datos, pruebas, Docker, CI/CD e integración de IA. Aporto siete años de experiencia laboral, precisión, responsabilidad y resolución práctica de problemas.",
   yDerecha,
-  { tamaño: 8.8, espacio: 1 },
+  { tamaño: 8.05, espacio: 0.55 },
 );
 
-yDerecha = tituloContenido("Proyectos técnicos", yDerecha + 17);
+yDerecha = tituloContenido("Proyectos técnicos", yDerecha + 11);
 yDerecha = encabezadoTrabajo(
   "JobRadar — Plataforma SaaS de alertas de empleo",
   "Python · FastAPI · PostgreSQL · Streamlit · Docker · Pytest · Telegram",
   yDerecha,
 );
-yDerecha = viñeta("Desarrollé el dashboard, Docker, pruebas automatizadas y la integración de notificaciones con Telegram.", yDerecha);
-yDerecha = viñeta("Incluye autenticación JWT, API REST, SQLAlchemy/Alembic, 69 pruebas y CI exitoso.", yDerecha);
+yDerecha = viñeta("Dashboard, Docker, pruebas y notificaciones con Telegram; API REST multiusuario con JWT, SQLAlchemy/Alembic, 69 pruebas y CI exitoso.", yDerecha);
 
 yDerecha = encabezadoTrabajo(
   "Tutor HTML y CSS con Gemini",
   "JavaScript · Node.js · Express · Gemini · SQLite FTS5 · RAG · OCR",
-  yDerecha + 8,
+  yDerecha + 5,
 );
-yDerecha = viñeta("Construí un tutor que consulta documentos propios, responde con fuentes y genera actividades de estudio.", yDerecha);
-yDerecha = viñeta("Implementé PDF, OCR, búsqueda documental, flashcards, seguimiento de progreso y 43 pruebas.", yDerecha);
+yDerecha = viñeta("Tutor con fuentes, PDF/OCR, búsqueda documental, flashcards y seguimiento de progreso; API segura y 43 pruebas automatizadas.", yDerecha);
 
-yDerecha = tituloContenido("Experiencia laboral", yDerecha + 17);
+yDerecha = encabezadoTrabajo(
+  "GathSession — Landing page de comunidad",
+  "HTML5 · Sass · CSS Grid · Flexbox · JavaScript · Vite",
+  yDerecha + 5,
+);
+yDerecha = viñeta("Interfaz responsive para escritorio, tablet y móvil, con HTML semántico y navegación accesible mediante teclado.", yDerecha);
+
+yDerecha = encabezadoTrabajo(
+  "Beauty Spa — Landing page desde Figma",
+  "HTML5 · Sass · CSS Grid · Flexbox · JavaScript · Vite",
+  yDerecha + 5,
+);
+yDerecha = viñeta("Adaptación responsive de un diseño de 1920 × 1080, con navegación móvil accesible y contenido sin desbordamiento horizontal.", yDerecha);
+
+yDerecha = encabezadoTrabajo(
+  "Adam Keyes Portfolio — Portafolio responsive",
+  "HTML5 · Sass · CSS Grid · Flexbox · Vite",
+  yDerecha + 5,
+);
+yDerecha = viñeta("Reproducción desde Figma con presentación, habilidades, galería de proyectos y contacto, adaptada a escritorio, tableta y móvil.", yDerecha);
+
+yDerecha = tituloContenido("Experiencia", yDerecha + 11);
 yDerecha = encabezadoTrabajo("Carpintero — AICON Edificadora", "2019–actualidad · Costa Rica", yDerecha);
-yDerecha = viñeta("Instalación de puertas, muebles, gradas de madera, artesonados y revestimientos de pared.", yDerecha);
-yDerecha = viñeta("Trabajo preciso según medidas, planos y requerimientos, con organización y atención al detalle.", yDerecha);
+yDerecha = viñeta("Instalación de puertas, muebles, gradas, artesonados y revestimientos; trabajo preciso según medidas y requerimientos.", yDerecha);
+yDerecha = encabezadoTrabajo("Desarrollo de proyectos de software", "2026–actualidad · Experiencia práctica", yDerecha + 4);
+yDerecha = viñeta("Construcción de cinco proyectos para aplicar backend, frontend, datos, pruebas, automatización e inteligencia artificial.", yDerecha);
 
-yDerecha = tituloContenido("Educación", yDerecha + 17);
+yDerecha = tituloContenido("Educación", yDerecha + 10);
 const estudios = [
   ["Máster en Desarrollo de Software con IA", "BIG School · jun. 2026–sept. 2026 · En curso"],
   ["Programa de Desarrollo Web Full Stack", "Conquer Blocks · ago. 2025–dic. 2026 · En curso"],
@@ -228,15 +248,15 @@ const estudios = [
 ];
 
 for (const [estudio, datos] of estudios) {
-  yDerecha = textoContenido(estudio, yDerecha + 5, { negrita: true, tamaño: 8.6 });
-  yDerecha = textoContenido(datos, yDerecha + 1, { tamaño: 7.8, color: tenue });
+  yDerecha = textoContenido(estudio, yDerecha + 3, { negrita: true, tamaño: 7.85 });
+  yDerecha = textoContenido(datos, yDerecha + 0.5, { tamaño: 7.1, color: tenue });
 }
 
-yDerecha = tituloContenido("Certificaciones destacadas", yDerecha + 17);
+yDerecha = tituloContenido("Certificaciones destacadas", yDerecha + 10);
 yDerecha = textoContenido(
   "CCNP Enterprise Core Networking y Advanced Routing (2025) · CCNAv7 Introducción a Redes, Switching/Routing/Wireless y Redes Empresariales (2022–2023) · Cybersecurity Essentials (2023) · Full Stack con Python, VTEK (2026) · Chatbots y Agentes Inteligentes, TEC/FUNDATEC (2026) · Electrónica General, COSVIC, 108 horas (2020–2021).",
   yDerecha,
-  { tamaño: 8.2, espacio: 0.8 },
+  { tamaño: 7.35, espacio: 0.4 },
 );
 
 console.log(`Contenido lateral hasta Y=${Math.round(yIzquierda)} de ${Math.round(paginaAlto)}`);
@@ -245,5 +265,7 @@ console.log(`Contenido principal hasta Y=${Math.round(yDerecha)} de ${Math.round
 doc.end();
 
 archivo.on("finish", () => {
+  fs.copyFileSync(salida, path.join(carpeta, "..", "public", "documentos", "Jesus_Granados_CV.pdf"));
   console.log(`PDF generado: ${salida}`);
+  console.log("CV visual público actualizado.");
 });

@@ -27,7 +27,7 @@ body {
 }
 
 .perfil {
-  padding: 12mm 8mm;
+  padding: 10mm 7mm;
   color: #ffffff;
   background: #12344d;
 }
@@ -66,7 +66,7 @@ h1 {
 }
 
 .perfil section {
-  margin-top: 6mm;
+  margin-top: 4.5mm;
 }
 
 .perfil h2 {
@@ -80,15 +80,15 @@ h1 {
 }
 
 .perfil h3 {
-  margin: 2mm 0 0.6mm;
+  margin: 1.4mm 0 0.4mm;
   color: #ffffff;
   font-size: 8.3pt;
 }
 
 .perfil p {
-  margin: 1mm 0;
+  margin: 0.7mm 0;
   color: #e4edf2;
-  font-size: 7.8pt;
+  font-size: 7.1pt;
   overflow-wrap: anywhere;
 }
 
@@ -98,11 +98,11 @@ h1 {
 }
 
 .contenido {
-  padding: 11mm 12mm 9mm;
+  padding: 8mm 10mm 7mm;
 }
 
 .contenido section {
-  margin-top: 4mm;
+  margin-top: 2.5mm;
 }
 
 .contenido .primera-seccion {
@@ -114,20 +114,20 @@ h1 {
   padding-bottom: 1mm;
   color: #12344d;
   border-bottom: 0.7px solid #9bb0bd;
-  font-size: 10.2pt;
+  font-size: 9.5pt;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
 .contenido h3 {
-  margin: 2mm 0 0.5mm;
+  margin: 1.3mm 0 0.4mm;
   color: #1d2935;
-  font-size: 9pt;
+  font-size: 8.3pt;
 }
 
 .contenido p {
-  margin: 1mm 0;
-  font-size: 8.2pt;
+  margin: 0.7mm 0;
+  font-size: 7.6pt;
 }
 
 .datos {
@@ -136,13 +136,13 @@ h1 {
 }
 
 ul {
-  margin: 1mm 0 1.5mm;
+  margin: 0.7mm 0 1mm;
   padding-left: 4.5mm;
 }
 
 li {
-  margin: 0.6mm 0;
-  font-size: 8pt;
+  margin: 0.35mm 0;
+  font-size: 7.4pt;
 }
 
 @page {

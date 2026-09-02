@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate": "node generar-pdf.js",
+    "generate": "node generar-pdf.js && node generar-ats.js",
     "verify": "node verificar-pdf.js"
   },
   "dependencies": {
