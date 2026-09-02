@@ -1,7 +1,7 @@
 # CV de Jesús Granados
 
-Landing page profesional de Jesús Francisco Granados Mora, desarrollador
-Backend Python Junior y técnico en redes.
+Landing page profesional de Jesús Francisco Granados Mora, Desarrollador Full
+Stack Junior y técnico en redes.
 
 ## Ver CV
 

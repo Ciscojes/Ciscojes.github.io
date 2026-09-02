@@ -12,7 +12,7 @@ const doc = new PDFDocument({
   info: {
     Title: "CV - Jesús Francisco Granados Mora",
     Author: "Jesús Francisco Granados Mora",
-    Subject: "Desarrollador Backend Python Junior y Técnico en Redes",
+    Subject: "Desarrollador Full Stack Junior y Técnico en Redes",
     Keywords: "Python, FastAPI, Backend, Full Stack, PostgreSQL, Docker, APIs REST, Inteligencia Artificial, Redes, CCNA, CCNP",
   },
 });
@@ -123,7 +123,7 @@ yIzquierda = textoLateral("JESÚS FRANCISCO\nGRANADOS MORA", yIzquierda, {
   color: blanco,
   espacio: 0,
 });
-yIzquierda = textoLateral("Desarrollador Backend\nPython Junior", yIzquierda + 9, {
+yIzquierda = textoLateral("Desarrollador Full Stack\nJunior", yIzquierda + 9, {
   negrita: true,
   tamaño: 9.5,
   color: acento,
@@ -192,7 +192,7 @@ yIzquierda = textoLateral("Licencia de motocicleta.", yIzquierda + 3);
 let yDerecha = 31;
 yDerecha = tituloContenido("Perfil profesional", yDerecha);
 yDerecha = textoContenido(
-  "Desarrollador backend Python junior y técnico en redes, con formación Full Stack e inteligencia artificial. He construido cinco proyectos funcionales y responsive con APIs, bases de datos, pruebas, Docker, CI/CD e integración de IA. Aporto siete años de experiencia laboral, precisión, responsabilidad y resolución práctica de problemas.",
+  "Desarrollador Full Stack Junior y técnico en redes, con formación en inteligencia artificial. He construido cinco proyectos funcionales y responsive con APIs, bases de datos, pruebas, Docker, CI/CD e integración de IA. Aporto siete años de experiencia laboral, precisión, responsabilidad y resolución práctica de problemas.",
   yDerecha,
   { tamaño: 8.05, espacio: 0.55 },
 );

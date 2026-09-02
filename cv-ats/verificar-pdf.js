@@ -12,7 +12,7 @@ const archivos = [
 
 const datosCanonicos = [
   "Jesús Francisco Granados Mora",
-  "Desarrollador Backend Python Junior",
+  "Desarrollador Full Stack Junior",
   "Técnico en Redes",
   "AICON Edificadora",
   "2019",
