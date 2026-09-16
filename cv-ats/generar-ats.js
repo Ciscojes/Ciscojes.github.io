@@ -105,8 +105,8 @@ escribir("Entrega, redes y seguridad: Git, GitHub, Linux, Docker, GitHub Actions
 seccion("Proyectos técnicos");
 proyecto(
   "JobRadar — Plataforma SaaS de alertas de empleo",
-  "Python · FastAPI · PostgreSQL · Streamlit · Docker · Pytest · Telegram",
-  "Dashboard, Docker, pruebas y notificaciones con Telegram; API REST multiusuario con JWT, SQLAlchemy/Alembic, 69 pruebas y CI exitoso.",
+  "Next.js · Python · FastAPI · PostgreSQL · Docker · Pytest · Telegram",
+  "Frontend Next.js y API FastAPI multiusuario; búsquedas automáticas, PostgreSQL/Alembic, alertas por Telegram, 80 pruebas y CI aprobado.",
 );
 proyecto(
   "Tutor HTML y CSS con Gemini",

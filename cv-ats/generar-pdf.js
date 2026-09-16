@@ -200,10 +200,10 @@ yDerecha = textoContenido(
 yDerecha = tituloContenido("Proyectos técnicos", yDerecha + 11);
 yDerecha = encabezadoTrabajo(
   "JobRadar — Plataforma SaaS de alertas de empleo",
-  "Python · FastAPI · PostgreSQL · Streamlit · Docker · Pytest · Telegram",
+  "Next.js · Python · FastAPI · PostgreSQL · Docker · Pytest · Telegram",
   yDerecha,
 );
-yDerecha = viñeta("Dashboard, Docker, pruebas y notificaciones con Telegram; API REST multiusuario con JWT, SQLAlchemy/Alembic, 69 pruebas y CI exitoso.", yDerecha);
+yDerecha = viñeta("Frontend Next.js y API FastAPI multiusuario; búsquedas automáticas, PostgreSQL/Alembic, alertas por Telegram, 80 pruebas y CI aprobado.", yDerecha);
 
 yDerecha = encabezadoTrabajo(
   "Tutor HTML y CSS con Gemini",
