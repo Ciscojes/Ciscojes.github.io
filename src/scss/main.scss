@@ -1404,3 +1404,16 @@ footer {
     transition-duration: 0.01ms !important;
   }
 }
+
+// Project summaries describe capabilities without simulating product screenshots.
+.zona-proyectos .proyecto-resumen {
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 2rem; background: linear-gradient(145deg, #102b3d, #07111f);
+  .resumen-etiqueta { color: #63d3cf; font-family: monospace; }
+  h4 { margin: 1rem 0; font-size: clamp(1.4rem, 2.2vw, 2rem); }
+  ul { display: grid; gap: .8rem; padding-left: 1.2rem; }
+  p { margin-top: 1.5rem; font-size: .8rem; color: #a8b8c8; }
+}
+@media (min-width: 1000px) {
+  .formacion .estudios-actuales { grid-template-columns: repeat(3, 1fr); }
+}

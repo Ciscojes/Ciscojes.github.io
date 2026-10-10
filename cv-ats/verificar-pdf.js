@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { getDocument } from "pdfjs-dist/legacy/build/pdf.mjs";
 
 const carpeta = path.dirname(fileURLToPath(import.meta.url));
-const fuentesEstandar = `${path.join(carpeta, "node_modules", "pdfjs-dist", "standard_fonts")}${path.sep}`;
+const fuentesEstandar = `${path.join(carpeta, "node_modules", "pdfjs-dist", "standard_fonts").replaceAll("\\", "/")}/`;
 const archivos = [
   ["CV visual", path.join(carpeta, "Jesus_Granados_CV_ATS.pdf")],
   ["CV ATS", path.join(carpeta, "Jesus_Granados_CV_ATS_una_columna.pdf")],
@@ -12,7 +12,7 @@ const archivos = [
 
 const datosCanonicos = [
   "Jesús Francisco Granados Mora",
-  "Desarrollador Full Stack Junior",
+  "Desarrollador de software junior",
   "Técnico en Redes",
   "AICON Edificadora",
   "2019",
@@ -31,15 +31,19 @@ const datosCanonicos = [
   "GitHub Actions",
   "JavaScript",
   "Node.js",
-  "Express",
-  "Sass",
-  "Vite",
   "Gemini",
   "RAG",
   "OCR",
   "MCP",
-  "CCNA",
-  "CCNP",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "AICON Web",
+  "Deciflujo",
+  "Commit Academy",
+  "Cloud",
+  "AWS",
+  "Fase final",
   "BIG School",
   "Conquer Blocks",
   "Ejecutivo en Inglés para Servicios",
@@ -50,6 +54,7 @@ function normalizar(texto) {
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/&amp;/g, "&")
+    .replace(/&/g, "y")
     .replace(/\s+/g, " ")
     .toLowerCase();
 }
@@ -93,6 +98,10 @@ for (const [nombre, archivo] of archivos) {
   console.log(`Enlaces detectados: ${resultado.enlaces}`);
   console.log(`Similitud por cobertura de datos web: ${cobertura.toFixed(1)}% (${datosCanonicos.length - faltantes.length}/${datosCanonicos.length})`);
 
+  if (/jun\. 2026|sept\. 2026|ago\. 2025|dic\. 2026|80 pruebas|43 pruebas/.test(resultado.texto)) {
+    console.error("Fechas de estudios o cifras de pruebas obsoletas");
+    process.exitCode = 1;
+  }
   if (faltantes.length > 0) {
     console.error(`Faltantes: ${faltantes.join(", ")}`);
   }

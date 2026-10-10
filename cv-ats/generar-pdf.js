@@ -12,7 +12,7 @@ const doc = new PDFDocument({
   info: {
     Title: "CV - Jesús Francisco Granados Mora",
     Author: "Jesús Francisco Granados Mora",
-    Subject: "Desarrollador Full Stack Junior y Técnico en Redes",
+    Subject: "Desarrollador de software junior | Python y Full Stack",
     Keywords: "Python, FastAPI, Backend, Full Stack, PostgreSQL, Docker, APIs REST, Inteligencia Artificial, Redes, CCNA, CCNP",
   },
 });
@@ -123,7 +123,7 @@ yIzquierda = textoLateral("JESÚS FRANCISCO\nGRANADOS MORA", yIzquierda, {
   color: blanco,
   espacio: 0,
 });
-yIzquierda = textoLateral("Desarrollador Full Stack\nJunior", yIzquierda + 9, {
+yIzquierda = textoLateral("Desarrollador de software\njunior", yIzquierda + 9, {
   negrita: true,
   tamaño: 9.5,
   color: acento,
@@ -133,6 +133,8 @@ yIzquierda = textoLateral("Técnico en Redes", yIzquierda + 4, {
   tamaño: 8.3,
   color: lateralTexto,
 });
+
+yIzquierda = textoLateral("Python · Full Stack · IA aplicada", yIzquierda + 5, { tamaño: 7.3 });
 
 yIzquierda = tituloLateral("Contacto", yIzquierda + 18);
 yIzquierda = textoLateral("San José, Costa Rica", yIzquierda);
@@ -154,13 +156,15 @@ yIzquierda = textoLateral("LinkedIn: Jesús Granados", yIzquierda + 3, {
   enlace: "https://www.linkedin.com/in/jesus-granados-ba9aab1b4/",
 });
 
+yIzquierda = textoLateral("ciscojes.github.io", yIzquierda + 3, { enlace: "https://ciscojes.github.io/", color: blanco });
+
 yIzquierda = tituloLateral("Habilidades", yIzquierda + 18);
 const habilidades = [
-  ["Backend y Full Stack", "Python · FastAPI · APIs REST · Pydantic · JavaScript · Node.js · Express · HTML · Sass/CSS · Vite"],
+  ["Backend y Full Stack", "Python · FastAPI · JavaScript · TypeScript · React · Next.js · Node.js · HTML · CSS"],
   ["Datos", "PostgreSQL · SQLite · SQLAlchemy · Alembic · Migraciones"],
-  ["Inteligencia artificial", "Gemini · APIs de IA · Prompt engineering · RAG · OCR · Bases de conocimiento · MCP · Chatbots · Agentes IA"],
+  ["Inteligencia artificial", "Gemini · APIs de IA · RAG · OCR · Bases de conocimiento; MCP en profundización"],
   ["Calidad y entrega", "Pytest · Git · GitHub · Linux · Docker · GitHub Actions · CI/CD · Spec-Driven Development"],
-  ["Redes y seguridad", "CCNA · CCNP · Switching · Routing · Ciberseguridad"],
+  ["Redes y seguridad", "Técnico en Redes · Routing · Switching · Ciberseguridad"],
 ];
 
 for (const [grupo, herramientas] of habilidades) {
@@ -175,6 +179,10 @@ for (const [grupo, herramientas] of habilidades) {
     espacio: 0.45,
   });
 }
+
+yIzquierda = tituloLateral("Formación actual", yIzquierda + 14);
+yIzquierda = textoLateral("Cloud / AWS y DevOps", yIzquierda);
+yIzquierda = textoLateral("Commit Academy · En curso", yIzquierda + 2);
 
 yIzquierda = tituloLateral("Idiomas", yIzquierda + 17);
 yIzquierda = textoLateral("Ejecutivo en Inglés para Servicios", yIzquierda, {
@@ -192,57 +200,33 @@ yIzquierda = textoLateral("Licencia de motocicleta.", yIzquierda + 3);
 let yDerecha = 31;
 yDerecha = tituloContenido("Perfil profesional", yDerecha);
 yDerecha = textoContenido(
-  "Desarrollador Full Stack Junior y técnico en redes, con formación en inteligencia artificial. He construido cinco proyectos funcionales y responsive con APIs, bases de datos, pruebas, Docker, CI/CD e integración de IA. Aporto siete años de experiencia laboral, precisión, responsabilidad y resolución práctica de problemas.",
+  "Desarrollador de software junior y Técnico en Redes. Construyo aplicaciones con Python, TypeScript, APIs, bases de datos, pruebas e IA aplicada. Mis proyectos abarcan gestión inmobiliaria, empleo, finanzas y educación. Estoy en la fase final del máster de software con IA y amplío mi formación en Cloud/AWS y DevOps.",
   yDerecha,
   { tamaño: 8.05, espacio: 0.55 },
 );
 
 yDerecha = tituloContenido("Proyectos técnicos", yDerecha + 11);
-yDerecha = encabezadoTrabajo(
-  "JobRadar — Plataforma SaaS de alertas de empleo",
-  "Next.js · Python · FastAPI · PostgreSQL · Docker · Pytest · Telegram",
-  yDerecha,
-);
-yDerecha = viñeta("Frontend Next.js y API FastAPI multiusuario; búsquedas automáticas, PostgreSQL/Alembic, alertas por Telegram, 80 pruebas y CI aprobado.", yDerecha);
-
-yDerecha = encabezadoTrabajo(
-  "Tutor HTML y CSS con Gemini",
-  "JavaScript · Node.js · Express · Gemini · SQLite FTS5 · RAG · OCR",
-  yDerecha + 5,
-);
-yDerecha = viñeta("Tutor con fuentes, PDF/OCR, búsqueda documental, flashcards y seguimiento de progreso; API segura y 43 pruebas automatizadas.", yDerecha);
-
-yDerecha = encabezadoTrabajo(
-  "GathSession — Landing page de comunidad",
-  "HTML5 · Sass · CSS Grid · Flexbox · JavaScript · Vite",
-  yDerecha + 5,
-);
-yDerecha = viñeta("Interfaz responsive para escritorio, tablet y móvil, con HTML semántico y navegación accesible mediante teclado.", yDerecha);
-
-yDerecha = encabezadoTrabajo(
-  "Beauty Spa — Landing page desde Figma",
-  "HTML5 · Sass · CSS Grid · Flexbox · JavaScript · Vite",
-  yDerecha + 5,
-);
-yDerecha = viñeta("Adaptación responsive de un diseño de 1920 × 1080, con navegación móvil accesible y contenido sin desbordamiento horizontal.", yDerecha);
-
-yDerecha = encabezadoTrabajo(
-  "Adam Keyes Portfolio — Portafolio responsive",
-  "HTML5 · Sass · CSS Grid · Flexbox · Vite",
-  yDerecha + 5,
-);
-yDerecha = viñeta("Reproducción desde Figma con presentación, habilidades, galería de proyectos y contacto, adaptada a escritorio, tableta y móvil.", yDerecha);
+yDerecha = encabezadoTrabajo("AICON Web - Gestión inmobiliaria y CRM", "Next.js · React · TypeScript · Supabase", yDerecha + 5);
+yDerecha = viñeta("Catálogo, panel administrativo y gestión comercial; roles, migraciones, pruebas y desarrollo guiado por especificaciones. En desarrollo.", yDerecha);
+yDerecha = encabezadoTrabajo("JobRadar - Seguimiento y alertas de empleo", "Next.js · Python · FastAPI · PostgreSQL · Docker", yDerecha + 5);
+yDerecha = viñeta("Proyecto colaborativo. Mi aportación: frontend, experiencia del producto, notificaciones, pruebas e ingeniería del proyecto.", yDerecha);
+yDerecha = encabezadoTrabajo("Deciflujo - Control financiero para pymes", "Next.js · TypeScript · SQLite · PostgreSQL", yDerecha + 5);
+yDerecha = viñeta("Movimientos, presupuestos, reportes y cierres; espacios multiempresa, roles y auditoría. MVP en validación con pruebas unitarias y E2E.", yDerecha);
+yDerecha = encabezadoTrabajo("Tutor HTML y CSS con Gemini", "Node.js · Express · Gemini · SQLite FTS5 · RAG · OCR", yDerecha + 5);
+yDerecha = viñeta("Consulta documentos con fuentes y genera ejercicios y tarjetas; extracción PDF/OCR, progreso y repaso espaciado.", yDerecha);
+yDerecha = textoContenido("Otros proyectos frontend: GathSession, Beauty Spa y Adam Keyes Portfolio. Código y demos en mi portafolio.", yDerecha + 4, { tamaño: 7.3 });
 
 yDerecha = tituloContenido("Experiencia", yDerecha + 11);
-yDerecha = encabezadoTrabajo("Carpintero — AICON Edificadora", "2019–actualidad · Costa Rica", yDerecha);
+yDerecha = encabezadoTrabajo("Carpintero - AICON Edificadora", "2019-actualidad · Costa Rica", yDerecha);
 yDerecha = viñeta("Instalación de puertas, muebles, gradas, artesonados y revestimientos; trabajo preciso según medidas y requerimientos.", yDerecha);
-yDerecha = encabezadoTrabajo("Desarrollo de proyectos de software", "2026–actualidad · Experiencia práctica", yDerecha + 4);
-yDerecha = viñeta("Construcción de cinco proyectos para aplicar backend, frontend, datos, pruebas, automatización e inteligencia artificial.", yDerecha);
+yDerecha = encabezadoTrabajo("Desarrollo de proyectos de software", "2026-actualidad · Experiencia práctica", yDerecha + 4);
+yDerecha = viñeta("Proyectos propios y colaborativos con backend, frontend, datos, pruebas, automatización e IA; código y documentación públicos.", yDerecha);
 
 yDerecha = tituloContenido("Educación", yDerecha + 10);
 const estudios = [
-  ["Máster en Desarrollo de Software con IA", "BIG School · jun. 2026–sept. 2026 · En curso"],
-  ["Programa de Desarrollo Web Full Stack", "Conquer Blocks · ago. 2025–dic. 2026 · En curso"],
+  ["Máster en Desarrollo de Software con IA", "BIG School · Fase final: últimos módulos y proyecto final"],
+  ["Programa de Desarrollo Web Full Stack", "Conquer Blocks · En curso"],
+  ["Cloud / AWS", "Commit Academy · En curso; prácticas de DevOps"],
   ["Técnico en Redes", "Universidad Castro Carazo · 2023 · 450 horas · Nota 91,66"],
   ["Bachiller en Educación Media", "CONED, UNED y MEP · 2025"],
 ];
@@ -254,7 +238,7 @@ for (const [estudio, datos] of estudios) {
 
 yDerecha = tituloContenido("Certificaciones destacadas", yDerecha + 10);
 yDerecha = textoContenido(
-  "CCNP Enterprise Core Networking y Advanced Routing (2025) · CCNAv7 Introducción a Redes, Switching/Routing/Wireless y Redes Empresariales (2022–2023) · Cybersecurity Essentials (2023) · Full Stack con Python, VTEK (2026) · Chatbots y Agentes Inteligentes, TEC/FUNDATEC (2026) · Electrónica General, COSVIC, 108 horas (2020–2021).",
+  "Fundamentos de AWS: Cloud, Serverless y Operación - Commit Academy (completado). Formación Cisco CCNAv7 y CCNP Enterprise; Cybersecurity Essentials; Full Stack con Python - VTEK; Chatbots y Agentes Inteligentes - TEC/FUNDATEC.",
   yDerecha,
   { tamaño: 7.35, espacio: 0.4 },
 );
