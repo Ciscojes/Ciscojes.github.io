@@ -13,7 +13,7 @@ const doc = new PDFDocument({
   info: {
     Title: "CV ATS - Jesús Francisco Granados Mora",
     Author: "Jesús Francisco Granados Mora",
-    Subject: "Desarrollador de software junior | Python y Full Stack",
+    Subject: "Desarrollador de software junior | Python, TypeScript e IA aplicada",
     Keywords: "Python, FastAPI, Backend, Full Stack, PostgreSQL, Docker, APIs REST, Inteligencia Artificial, Redes, CCNA, CCNP",
   },
 });
@@ -61,7 +61,7 @@ function proyecto(nombre, tecnologias, resumen) {
 
 escribir("JESÚS FRANCISCO GRANADOS MORA", { negrita: true, tamaño: 16.5, color: azul });
 y += 1;
-escribir("Desarrollador de software junior | Python · Full Stack", { negrita: true, tamaño: 10.83 });
+escribir("Desarrollador de software junior | Python, TypeScript e IA aplicada", { negrita: true, tamaño: 10.83 });
 y += 2;
 
 const contactoY = y;

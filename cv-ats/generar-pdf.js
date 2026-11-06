@@ -12,7 +12,7 @@ const doc = new PDFDocument({
   info: {
     Title: "CV - Jesús Francisco Granados Mora",
     Author: "Jesús Francisco Granados Mora",
-    Subject: "Desarrollador de software junior | Python y Full Stack",
+    Subject: "Desarrollador de software junior | Python, TypeScript e IA aplicada",
     Keywords: "Python, FastAPI, Backend, Full Stack, PostgreSQL, Docker, APIs REST, Inteligencia Artificial, Redes, CCNA, CCNP",
   },
 });
@@ -123,7 +123,7 @@ yIzquierda = textoLateral("JESÚS FRANCISCO\nGRANADOS MORA", yIzquierda, {
   color: blanco,
   espacio: 0,
 });
-yIzquierda = textoLateral("Desarrollador de software\njunior", yIzquierda + 9, {
+yIzquierda = textoLateral("Desarrollador de software junior | Python, TypeScript e IA aplicada", yIzquierda + 9, {
   negrita: true,
   tamaño: 9.5,
   color: acento,
@@ -134,7 +134,6 @@ yIzquierda = textoLateral("Técnico en Redes", yIzquierda + 4, {
   color: lateralTexto,
 });
 
-yIzquierda = textoLateral("Python · Full Stack · IA aplicada", yIzquierda + 5, { tamaño: 7.3 });
 
 yIzquierda = tituloLateral("Contacto", yIzquierda + 18);
 yIzquierda = textoLateral("San José, Costa Rica", yIzquierda);

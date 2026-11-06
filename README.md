@@ -1,7 +1,6 @@
 # CV de Jesús Granados
 
-Landing page profesional de Jesús Francisco Granados Mora, Desarrollador de software
-junior, Python y Full Stack, con IA aplicada y Cloud/DevOps en formación.
+Desarrollador de software junior | Python, TypeScript e IA aplicada
 
 ## Ver CV
 
