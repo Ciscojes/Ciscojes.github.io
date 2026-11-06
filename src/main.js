@@ -21,6 +21,13 @@ navToggle.addEventListener("click", () => {
 
 navLinks.forEach((link) => link.addEventListener("click", closeNavigation));
 
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && navToggle.getAttribute("aria-expanded") === "true") {
+    closeNavigation();
+    navToggle.focus();
+  }
+});
+
 window.addEventListener(
   "scroll",
   () => header.classList.toggle("con-fondo", window.scrollY > 24),
@@ -43,26 +50,5 @@ const seccionObserver = new IntersectionObserver(
 );
 
 observedSections.forEach((seccion) => seccionObserver.observe(seccion));
-
-const animarTargets = document.querySelectorAll(
-  ".habilidad, .proyecto, .experiencia-item, .estudios-actuales article, .academias details",
-);
-
-if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  animarTargets.forEach((target) => target.classList.add("animar"));
-
-  const animarObserver = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      });
-    },
-    { threshold: 0.12 },
-  );
-
-  animarTargets.forEach((target) => animarObserver.observe(target));
-}
 
 document.querySelector("[data-year]").textContent = new Date().getFullYear();
