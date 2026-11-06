@@ -200,7 +200,7 @@ yIzquierda = textoLateral("Licencia de motocicleta.", yIzquierda + 3);
 let yDerecha = 31;
 yDerecha = tituloContenido("Perfil profesional", yDerecha);
 yDerecha = textoContenido(
-  "Desarrollador de software junior y Técnico en Redes. Construyo aplicaciones con Python, TypeScript, APIs, bases de datos, pruebas e IA aplicada. Mis proyectos abarcan gestión inmobiliaria, empleo, finanzas y educación. Estoy en la fase final del máster de software con IA y amplío mi formación en Cloud/AWS y DevOps.",
+  "Desarrollador de software junior y Técnico en Redes. En ORQENTIVA desarrollo una API de reservas con FastAPI y PostgreSQL. En JobRadar colaboré en la interfaz con Next.js, las notificaciones y las pruebas. Me interesan los puestos junior de backend Python y Full Stack. Mi próxima formación en AI Engineering (Commit Academy) incluye el desarrollo de agentes de IA.",
   yDerecha,
   { tamaño: 8.05, espacio: 0.55 },
 );

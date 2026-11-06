@@ -90,7 +90,7 @@ escribir("Portafolio: ciscojes.github.io", { enlace: "https://ciscojes.github.io
 
 seccion("Perfil profesional");
 escribir(
-  "Desarrollador de software junior y Técnico en Redes. Construyo aplicaciones con Python, TypeScript, APIs, bases de datos, pruebas e IA aplicada. Mis proyectos abarcan gestión inmobiliaria, empleo, finanzas y educación. Estoy en la fase final del máster de software con IA y amplío mi formación en Cloud/AWS y DevOps.",
+  "Desarrollador de software junior y Técnico en Redes. En ORQENTIVA desarrollo una API de reservas con FastAPI y PostgreSQL. En JobRadar colaboré en la interfaz con Next.js, las notificaciones y las pruebas. Me interesan los puestos junior de backend Python y Full Stack. Mi próxima formación en AI Engineering (Commit Academy) incluye el desarrollo de agentes de IA.",
   { tamaño: 8.95 },
 );
 
