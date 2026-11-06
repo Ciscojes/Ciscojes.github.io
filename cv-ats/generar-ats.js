@@ -104,10 +104,11 @@ y += 0.4;
 escribir("Entrega, redes y seguridad: Git, GitHub, Linux, Docker, GitHub Actions, CI/CD, routing, switching y ciberseguridad. Cloud/AWS y DevOps en formación.");
 
 seccion("Proyectos técnicos");
-proyecto("AICON Web - Gestión inmobiliaria y CRM", "Next.js · React · TypeScript · Supabase", "Catálogo, panel administrativo y gestión comercial; roles, migraciones, pruebas y desarrollo guiado por especificaciones. En desarrollo.");
-proyecto("JobRadar - Seguimiento y alertas de empleo", "Next.js · Python · FastAPI · PostgreSQL · Docker", "Proyecto colaborativo. Mi aportación: frontend, experiencia del producto, notificaciones, pruebas e ingeniería del proyecto.");
-proyecto("Deciflujo - Control financiero para pymes", "Next.js · TypeScript · SQLite · PostgreSQL", "Movimientos, presupuestos, reportes y cierres; espacios multiempresa, roles y auditoría. MVP en validación con pruebas unitarias y E2E.");
+proyecto("AICON Web - Gestión inmobiliaria y CRM", "Next.js · React · TypeScript · Supabase", "Catálogo y CRM con roles y políticas RLS. Especificaciones, migraciones, pruebas y seguridad en CI. En desarrollo.");
+proyecto("JobRadar - Seguimiento y alertas de empleo", "Next.js · Python · FastAPI · PostgreSQL · Docker", "Proyecto colaborativo. Mi aporte: frontend Next.js, experiencia de producto, notificaciones y pruebas. API FastAPI y alertas Telegram.");
+proyecto("Deciflujo - Control financiero para pymes", "Next.js · TypeScript · SQLite · PostgreSQL", "Finanzas multiempresa con roles, auditoría y cierres. Pruebas unitarias y E2E con SQLite y PostgreSQL. MVP en validación.");
 proyecto("Tutor HTML y CSS con Gemini", "Node.js · Express · Gemini · SQLite FTS5 · RAG · OCR", "Consulta documentos con fuentes y genera ejercicios y tarjetas; extracción PDF/OCR, progreso y repaso espaciado.");
+proyecto("Brújula Máster IA - Estudio de arquitectura y calidad", "JavaScript · PWA · Cloudflare Workers AI", "Tutor con fuentes, repaso espaciado y progreso local. Estudio sin conexión y tutor local de respaldo.");
 escribir("Otros proyectos frontend: GathSession, Beauty Spa y Adam Keyes Portfolio. Demos en ciscojes.github.io.");
 
 seccion("Experiencia");
@@ -119,7 +120,7 @@ proyecto(
 proyecto(
   "Desarrollo de proyectos de software | 2026-actualidad",
   "Backend · Frontend · Bases de datos · Pruebas · Automatización · IA",
-  "Desarrollo de AICON Web, JobRadar, Deciflujo y el tutor con IA, con código, documentación y pruebas.",
+  "Desarrollo de AICON Web, JobRadar, Deciflujo, Brújula Máster IA y el tutor con IA, con código, documentación y pruebas.",
 );
 
 seccion("Educación");

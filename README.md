@@ -42,3 +42,14 @@ npm run verify
 
 Los PDF publicados se guardan en `public/documentos/`. La plantilla
 `cv-ats/cv.html` es una alternativa para vista e impresión.
+
+## Contenido profesional
+
+La web, la plantilla imprimible y ambos generadores PDF incluyen AICON Web,
+JobRadar, Deciflujo, el tutor con Gemini y Brújula Máster IA, junto a tres
+prácticas frontend. JobRadar utiliza Next.js como única interfaz.
+
+Al actualizar proyectos, sincroniza `index.html`, `cv-ats/cv.html` y ambos
+generadores; después regenera los PDF y ejecuta la verificación. Los estados
+describen el alcance del proyecto y no certifican su lanzamiento ni que todos
+los análisis de calidad estén aprobados.

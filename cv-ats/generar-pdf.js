@@ -207,13 +207,15 @@ yDerecha = textoContenido(
 
 yDerecha = tituloContenido("Proyectos técnicos", yDerecha + 11);
 yDerecha = encabezadoTrabajo("AICON Web - Gestión inmobiliaria y CRM", "Next.js · React · TypeScript · Supabase", yDerecha + 5);
-yDerecha = viñeta("Catálogo, panel administrativo y gestión comercial; roles, migraciones, pruebas y desarrollo guiado por especificaciones. En desarrollo.", yDerecha);
+yDerecha = viñeta("Catálogo y CRM con roles y políticas RLS. Especificaciones, migraciones, pruebas y seguridad en CI. En desarrollo.", yDerecha);
 yDerecha = encabezadoTrabajo("JobRadar - Seguimiento y alertas de empleo", "Next.js · Python · FastAPI · PostgreSQL · Docker", yDerecha + 5);
-yDerecha = viñeta("Proyecto colaborativo. Mi aportación: frontend, experiencia del producto, notificaciones, pruebas e ingeniería del proyecto.", yDerecha);
+yDerecha = viñeta("Proyecto colaborativo. Mi aporte: frontend Next.js, experiencia de producto, notificaciones y pruebas. API FastAPI y alertas Telegram.", yDerecha);
 yDerecha = encabezadoTrabajo("Deciflujo - Control financiero para pymes", "Next.js · TypeScript · SQLite · PostgreSQL", yDerecha + 5);
-yDerecha = viñeta("Movimientos, presupuestos, reportes y cierres; espacios multiempresa, roles y auditoría. MVP en validación con pruebas unitarias y E2E.", yDerecha);
+yDerecha = viñeta("Finanzas multiempresa con roles, auditoría y cierres. Pruebas unitarias y E2E con SQLite y PostgreSQL. MVP en validación.", yDerecha);
 yDerecha = encabezadoTrabajo("Tutor HTML y CSS con Gemini", "Node.js · Express · Gemini · SQLite FTS5 · RAG · OCR", yDerecha + 5);
 yDerecha = viñeta("Consulta documentos con fuentes y genera ejercicios y tarjetas; extracción PDF/OCR, progreso y repaso espaciado.", yDerecha);
+yDerecha = encabezadoTrabajo("Brújula Máster IA - Estudio de arquitectura y calidad", "JavaScript · PWA · Cloudflare Workers AI", yDerecha + 5);
+yDerecha = viñeta("Tutor con fuentes, repaso espaciado y progreso local. Estudio sin conexión y tutor local de respaldo.", yDerecha);
 yDerecha = textoContenido("Otros proyectos frontend: GathSession, Beauty Spa y Adam Keyes Portfolio. Código y demos en mi portafolio.", yDerecha + 4, { tamaño: 7.3 });
 
 yDerecha = tituloContenido("Experiencia", yDerecha + 11);

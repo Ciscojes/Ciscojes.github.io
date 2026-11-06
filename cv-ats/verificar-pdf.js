@@ -40,6 +40,8 @@ const datosCanonicos = [
   "Next.js",
   "AICON Web",
   "Deciflujo",
+  "Brújula Máster IA",
+  "Cloudflare Workers AI",
   "Commit Academy",
   "Cloud",
   "AWS",

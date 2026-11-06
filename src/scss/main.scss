@@ -664,19 +664,6 @@ h3 {
     grid-column: span 3;
   }
 
-  .icono-habilidad {
-    display: grid;
-    width: 42px;
-    height: 42px;
-    margin-bottom: 3.4rem;
-    place-items: center;
-    color: $cyan;
-    border: 1px solid rgba($cyan, 0.25);
-    background: rgba($cyan, 0.06);
-    border-radius: 0.55rem;
-    font-family: monospace;
-  }
-
   h3 {
     font-size: 1.3rem;
   }
@@ -1309,10 +1296,6 @@ footer {
 
   .habilidad {
     min-height: auto;
-
-    .icono-habilidad {
-      margin-bottom: 2rem;
-    }
   }
 
   .proyecto {
