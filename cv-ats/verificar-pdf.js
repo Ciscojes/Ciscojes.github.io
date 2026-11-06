@@ -47,7 +47,8 @@ const datosCanonicos = [
   "AWS",
   "Fase final",
   "BIG School",
-  "Conquer Blocks",
+  "ORQENTIVA",
+  "Auto Scaling",
   "Ejecutivo en Inglés para Servicios",
 ];
 

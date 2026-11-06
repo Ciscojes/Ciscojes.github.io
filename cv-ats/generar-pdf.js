@@ -180,10 +180,6 @@ for (const [grupo, herramientas] of habilidades) {
   });
 }
 
-yIzquierda = tituloLateral("Formación actual", yIzquierda + 14);
-yIzquierda = textoLateral("Cloud / AWS y DevOps", yIzquierda);
-yIzquierda = textoLateral("Commit Academy · En curso", yIzquierda + 2);
-
 yIzquierda = tituloLateral("Idiomas", yIzquierda + 17);
 yIzquierda = textoLateral("Ejecutivo en Inglés para Servicios", yIzquierda, {
   negrita: true,
@@ -200,7 +196,7 @@ yIzquierda = textoLateral("Licencia de motocicleta.", yIzquierda + 3);
 let yDerecha = 31;
 yDerecha = tituloContenido("Perfil profesional", yDerecha);
 yDerecha = textoContenido(
-  "Desarrollador de software junior y Técnico en Redes. En ORQENTIVA desarrollo una API de reservas con FastAPI y PostgreSQL. En JobRadar colaboré en la interfaz con Next.js, las notificaciones y las pruebas. Me interesan los puestos junior de backend Python y Full Stack. Mi próxima formación en AI Engineering (Commit Academy) incluye el desarrollo de agentes de IA.",
+  "Desarrollador de software junior y Técnico en Redes. En ORQENTIVA desarrollo una API de reservas con FastAPI y PostgreSQL. En JobRadar colaboré en la interfaz con Next.js, las notificaciones y las pruebas. Me interesan los puestos junior de backend Python y Full Stack. Me interesa aplicar mi experiencia con tutores de IA al desarrollo de agentes.",
   yDerecha,
   { tamaño: 8.05, espacio: 0.55 },
 );
@@ -226,9 +222,8 @@ yDerecha = viñeta("Proyectos propios y colaborativos con backend, frontend, dat
 
 yDerecha = tituloContenido("Educación", yDerecha + 10);
 const estudios = [
-  ["Máster en Desarrollo de Software con IA", "BIG School · Fase final: últimos módulos y proyecto final"],
-  ["Programa de Desarrollo Web Full Stack", "Conquer Blocks · En curso"],
-  ["Cloud / AWS", "Commit Academy · En curso; prácticas de DevOps"],
+  ["Máster en Desarrollo de Software con IA", "BIG School · Fase final · ORQENTIVA, API de reservas"],
+  ["Cloud / AWS", "Commit Academy · En curso · laboratorios de EC2 y Auto Scaling"],
   ["Técnico en Redes", "Universidad Castro Carazo · 2023 · 450 horas · Nota 91,66"],
   ["Bachiller en Educación Media", "CONED, UNED y MEP · 2025"],
 ];

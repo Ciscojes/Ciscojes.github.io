@@ -90,7 +90,7 @@ escribir("Portafolio: ciscojes.github.io", { enlace: "https://ciscojes.github.io
 
 seccion("Perfil profesional");
 escribir(
-  "Desarrollador de software junior y Técnico en Redes. En ORQENTIVA desarrollo una API de reservas con FastAPI y PostgreSQL. En JobRadar colaboré en la interfaz con Next.js, las notificaciones y las pruebas. Me interesan los puestos junior de backend Python y Full Stack. Mi próxima formación en AI Engineering (Commit Academy) incluye el desarrollo de agentes de IA.",
+  "Desarrollador de software junior y Técnico en Redes. En ORQENTIVA desarrollo una API de reservas con FastAPI y PostgreSQL. En JobRadar colaboré en la interfaz con Next.js, las notificaciones y las pruebas. Me interesan los puestos junior de backend Python y Full Stack. Me interesa aplicar mi experiencia con tutores de IA al desarrollo de agentes.",
   { tamaño: 8.95 },
 );
 
@@ -101,7 +101,7 @@ escribir("Datos y calidad: PostgreSQL, SQLite, SQLAlchemy, Alembic, migraciones,
 y += 0.4;
 escribir("IA: Gemini, APIs de IA, RAG, OCR y bases de conocimiento. MCP en profundización.");
 y += 0.4;
-escribir("Entrega, redes y seguridad: Git, GitHub, Linux, Docker, GitHub Actions, CI/CD, routing, switching y ciberseguridad. Cloud/AWS y DevOps en formación.");
+escribir("Entrega, redes y seguridad: Git, GitHub, Linux, Docker, GitHub Actions, CI/CD, routing, switching y ciberseguridad.");
 
 seccion("Proyectos técnicos");
 proyecto("AICON Web - Gestión inmobiliaria y CRM", "Next.js · React · TypeScript · Supabase", "Catálogo y CRM con roles y políticas RLS. Especificaciones, migraciones, pruebas y seguridad en CI. En desarrollo.");
@@ -125,7 +125,7 @@ proyecto(
 
 seccion("Educación");
 escribir(
-  "Máster en Desarrollo de Software con IA - BIG School | fase final: últimos módulos y entrega del proyecto final.\nPrograma de Desarrollo Web Full Stack - Conquer Blocks | en curso.\nCloud / AWS - Commit Academy | en curso, con prácticas de DevOps.\nTécnico en Redes - Universidad Castro Carazo | 2023, 450 horas, nota 91,66.\nBachiller en Educación Media - CONED, UNED y MEP | 2025.",
+  "Máster en Desarrollo de Software con IA - BIG School | fase final. Proyecto final: ORQENTIVA, API de reservas.\nCloud / AWS - Commit Academy | en curso. Laboratorios de EC2 y Auto Scaling.\nTécnico en Redes - Universidad Castro Carazo | 2023, 450 horas, nota 91,66.\nBachiller en Educación Media - CONED, UNED y MEP | 2025.",
   { tamaño: 8.38, espacio: 0.15 },
 );
 
